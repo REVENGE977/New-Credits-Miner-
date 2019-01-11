@@ -44,7 +44,7 @@ client.on('ready', () => {//start of ready event
     //ready console msg code
 
    console.log(`----------------`);
-   console.log(`Credit Farmer - Script By : Bowlingtoolkit (Revenge)`);
+   console.log(`Probot & Tatsumaki Credits Farmer - Script By : Bowlingtoolkit (Revenge)`);
    console.log(`----------------`);
    console.log(`This Bots Online ' `);
    console.log(`----------------`);
