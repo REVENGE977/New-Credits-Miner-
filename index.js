@@ -1,5 +1,5 @@
 /*the script by revenge or bowlingtoolkit in github 
-so please dont share this code without the copyrights
+so please dont share this code without the rights
 Github: https://github.com/Bowlingtoolkit
 give me a star 🌟 if you like my projects and follow me daily codes !
 need some codes/selfbots ? join this server https://discord.gg/8JcbqDx its alpha codes but the name changed to narox
