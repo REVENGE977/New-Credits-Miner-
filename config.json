@@ -1,5 +1,7 @@
 {
-"tokens": ["the first token", "The second token", "The Third Token .. you can add more or less tokens."],
+"tokens": ["the first token",
+           "The second token",
+           "The Third Token .. you can add more or less tokens."],
 "prefix": "here write the prefix to get the credits and daily and rep",
 "speed": "120000"
 }
