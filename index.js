@@ -96,10 +96,13 @@ client.on('message', message => {//start of msg event
 client.on('ready', () => { //the start ready event
     let channel = 'channel id'//the channel id here
     let guild = 'server id'//the server id here
+    let i;
     var ms = config.speed;//The Speed In config.json [The Time Lapse Sending Msgs (If You Make It Faster, The Tokens Will Be Banned More Quickly)]
     setInterval (function () {
+      let i;
+       for (i = 0; ++i)
           //the msg will spamming
-      client.guilds.get(guild).channels.get(channel).send(`**Credit Farmer by Bowlingtoolkit Credit Farmer by Bowlingtoolkit Credit Farmer by Bowlingtoolkit Credit Farmer by Bowlingtoolkit Credit Farmer by Bowlingtoolkit **[ " ${x} " ]`)
+      client.guilds.get(guild).channels.get(channel).send(`**Credit Farmer by Bowlingtoolkit Credit Farmer by Bowlingtoolkit Credit Farmer by Bowlingtoolkit Credit Farmer by Bowlingtoolkit Credit Farmer by Bowlingtoolkit **[ " ${i} " ]`)
       //the msg will spamming ^    
     }, ms); 
           })
