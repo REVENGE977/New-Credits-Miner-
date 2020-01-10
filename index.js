@@ -1,10 +1,4 @@
-/*the script by revenge or bowlingtoolkit in github 
-so please dont share this code without the rights
-Github: https://github.com/Bowlingtoolkit
-give me a star 🌟 if you like my projects and follow me daily codes !
-need some codes/selfbots ? join this server https://discord.gg/8JcbqDx its alpha codes but the name changed to narox
-soon i will upload antijoin its anti to the accounts created less than you set in the code
-*/
+
 
 /*
 NOTE: I'm irresponsible if the tokens have been banned because of the miners
@@ -68,27 +62,33 @@ client.on('ready', () => {//start of ready event
 //end of ready console msg code
 
 client.on('message', message => {//start of msg event
-    if(message.content === `${prefix}daily`) {//the cmd
-        message.channel.send('#daily')
-    }//to get the daily 
+
 });//end of msg event
 
 //end of msg event
 client.on('message', message => {//start of msg event 
     if(message.content === `${prefix}credits`) {//the cmd
+      let mention = message.mentions.members.first();
+      if(!mention) {
         message.channel.send('#credits')
+      }
+        message.channel.send(`#credits ${mention}`) 
     }//to view the credits
+      if(message.content === `${prefix}daily`) {//the cmd
+        message.channel.send('#daily')
+    }//to get the daily 
+  
+
+    if(message.content === `${prefix}rep`) {//the cmd
+         let mention = message.mentions.users.first()//must mention someone after typing the command
+        if(!mention) return message.channel.send('Mention The Target')//if you didnt written the mention return with this msg
+        message.channel.send(`#rep ${mention}`)
+    }//to give someone a rep
 });//end of msg event
 
 //end of rep code
 
-client.on('message', message => {//start of msg event
-    let mention = message.mentions.users.first()//mention rule
-    if(message.content === `${prefix}rep`) {//the cmd
-        if(!mention) return message.channel.send('Mention The Target')//if he not written the mention return with this msg
-        message.channel.send(`#rep ${mention}`)
-    }//to give someone a rep
-});//end of msg event
+
 
 //end of rep code
 
